@@ -1,6 +1,6 @@
-import dotenv from "dotenv";
-import app from "../src/app.js";
-import connectDB from "../src/config/db.js";
+const dotenv = require("dotenv");
+const app = require("../src/app");
+const connectDB = require("../src/config/db");
 
 dotenv.config();
 
@@ -15,4 +15,4 @@ const handler = async (req, res) => {
   return app(req, res);
 };
 
-export default handler;
+module.exports = handler; 
