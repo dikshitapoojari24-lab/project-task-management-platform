@@ -1,48 +1,75 @@
-# Users, Projects & Tasks REST API — Task 3
+# Project Task Management Platform
 
-A production-ready REST API for managing users, projects, and tasks with a persistent MongoDB data layer.
-
-This backend provides secure user authentication, project management, task management, database relationships, validation, centralized error handling, and JWT-based authorization.
-
----
+A full-stack project and task management platform designed to help users create projects, manage tasks, assign work, track progress, and organize development activities from a single dashboard.
 
 ## 🚀 Features
 
-- User registration and login
-- JWT-based authentication
-- Protected API routes
-- Get, update, and delete current user profile
-- Create, retrieve, update, and delete projects
-- Create, retrieve, update, and delete tasks
-- Task status management
-- Task statuses:
-  - `todo`
-  - `in-progress`
-  - `done`
-- User-project relationship
-- User-task relationship
-- Project-task relationship
-- MongoDB persistent data storage
-- Mongoose schema and model validation
-- Input validation using Express Validator
-- Centralized error handling
-- Secure password hashing using bcrypt
-- Environment variable configuration
-- CORS support
-- Helmet security middleware
-- HTTP request logging with Morgan
+- 🔐 User Signup & Login
+- 🔑 JWT-based Authentication
+- 📊 Dashboard with project and task statistics
+- 📁 Project Creation & Management
+- ✅ Task Creation & Management
+- 👥 Task Assignment to Users
+- 🏷️ Task Status & Priority Management
+- 📈 Project Progress Tracking
+- 📝 Activity Tracking
+- 🤖 AI-powered Task Planning
+- 🔒 User-specific Project & Task Access
+- 📱 Responsive User Interface
 
----
+## 🛠️ Tech Stack
 
-## 🏗️ Architecture
+### Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+
+### Backend
+- Node.js
+- Express.js
+- REST API
+
+### Database
+- MongoDB
+- Mongoose
+
+### Authentication & Security
+- JSON Web Tokens (JWT)
+- bcrypt
+- Helmet
+- CORS
+
+### Development Tools
+- Git
+- GitHub
+- VS Code
+- Thunder Client
+
+## 📂 Project Structure
 
 ```text
-Client / Frontend
-       ↓
-    REST API
-       ↓
-   Express.js
-       ↓
-    Mongoose
-       ↓
-    MongoDB
+project-task-management-platform/
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── app.js
+│   │   └── server.js
+│   ├── package.json
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── ...
+│   ├── package.json
+│   └── ...
+│
+└── README.md
